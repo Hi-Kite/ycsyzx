@@ -52,18 +52,10 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
                 <span className="text-gray-300">河南省永城市实验中学</span>
               </li>
-              <li className="flex items-center">
-                <Phone className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-300">0370-XXXXXXX</span>
-              </li>
-              <li className="flex items-center">
-                <Mail className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-300">contact@ycsyzx.edu.cn</span>
-              </li>
             </ul>
             <div className="mt-4 flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Hi-Kite/ycsyzx"
                 className="text-gray-400 hover:text-white transition-colors"
                 aria-label="GitHub"
               >
