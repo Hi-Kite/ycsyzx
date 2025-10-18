@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Award, TrendingUp, Star, Trophy } from 'lucide-react'
+import { ArrowLeft, Award, TrendingUp } from 'lucide-react'
 
 const AchievementsPage = () => {
   return (
