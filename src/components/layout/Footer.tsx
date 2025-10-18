@@ -1,4 +1,4 @@
-import { MapPin, Github } from 'lucide-react'
+import { Github } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -47,12 +47,6 @@ const Footer = () => {
           {/* 联系信息 */}
           <div>
             <h3 className="text-lg font-semibold mb-4">联系方式</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
-                <span className="text-gray-300">河南省永城市实验中学</span>
-              </li>
-            </ul>
             <div className="mt-4 flex space-x-4">
               <a
                 href="https://github.com/Hi-Kite/ycsyzx"
