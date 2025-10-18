@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github } from 'lucide-react'
+import { MapPin, Github } from 'lucide-react'
 
 const Footer = () => {
   return (
