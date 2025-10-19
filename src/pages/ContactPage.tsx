@@ -1,34 +1,33 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowLeft, Mail, Phone, MapPin, Send, Clock } from 'lucide-react'
+import { ArrowLeft, Mail, Phone, MapPin} from 'lucide-react'
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  })
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: ''
+  // })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   const { name, value } = e.target
+  //   setFormData(prev => ({
+  //     ...prev,
+  //     [name]: value
+  //   }))
+  // }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // 这里可以添加表单提交逻辑
-    alert('感谢您的留言！我们会尽快回复您。')
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    })
-  }
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   // 这里可以添加表单提交逻辑
+  //   alert('感谢您的留言！我们会尽快回复您。')
+  //   setFormData({
+  //     name: '',
+  //     email: '',
+  //     subject: '',
+  //     message: ''
+  //   })
+  // }
 
   return (
     <div className="flex flex-col">
@@ -65,10 +64,9 @@ const ContactPage = () => {
                 <div className="flex justify-center">
                   <MapPin className="h-12 w-12 text-primary-600" />
                 </div>
-                <h3 className="mt-6 text-xl font-bold text-gray-900">学校地址</h3>
+                <h3 className="mt-6 text-xl font-bold text-gray-900">地址</h3>
                 <p className="mt-4 text-gray-600">
-                  河南省永城市实验中学<br />
-                  南校区/北校区
+                  暂无
                 </p>
               </div>
               
@@ -78,8 +76,7 @@ const ContactPage = () => {
                 </div>
                 <h3 className="mt-6 text-xl font-bold text-gray-900">联系电话</h3>
                 <p className="mt-4 text-gray-600">
-                  校办公室: 0370-XXXXXXX<br />
-                  教务处: 0370-XXXXXXX
+                  暂无
                 </p>
               </div>
               
@@ -89,15 +86,14 @@ const ContactPage = () => {
                 </div>
                 <h3 className="mt-6 text-xl font-bold text-gray-900">电子邮箱</h3>
                 <p className="mt-4 text-gray-600">
-                  校办公室: office@ycsyzx.edu.cn<br />
-                  招生咨询: zsb@ycsyzx.edu.cn
+                  暂无
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Contact Form */}
+        {/* Contact Form
         <section className="py-16 bg-gray-50">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -181,7 +177,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Office Hours */}
         <section className="py-16 bg-white">
@@ -192,8 +188,8 @@ const ContactPage = () => {
                 学校各部门办公时间安排
               </p>
             </div>
-
-            <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+            暂无
+            {/* <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
               <div className="p-8">
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <div>
@@ -242,7 +238,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
